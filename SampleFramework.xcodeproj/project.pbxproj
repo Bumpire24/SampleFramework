@@ -10,6 +10,7 @@
 		AD48269521C1D0BC00BE31AD /* SampleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD48268B21C1D0BC00BE31AD /* SampleFramework.framework */; };
 		AD48269A21C1D0BC00BE31AD /* SampleFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD48269921C1D0BC00BE31AD /* SampleFrameworkTests.swift */; };
 		AD48269C21C1D0BC00BE31AD /* SampleFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = AD48268E21C1D0BC00BE31AD /* SampleFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD4826A621C1D0EB00BE31AD /* testclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4826A521C1D0EB00BE31AD /* testclass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		AD48269421C1D0BC00BE31AD /* SampleFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD48269921C1D0BC00BE31AD /* SampleFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFrameworkTests.swift; sourceTree = "<group>"; };
 		AD48269B21C1D0BC00BE31AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD4826A521C1D0EB00BE31AD /* testclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testclass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				AD48268E21C1D0BC00BE31AD /* SampleFramework.h */,
 				AD48268F21C1D0BC00BE31AD /* Info.plist */,
+				AD4826A521C1D0EB00BE31AD /* testclass.swift */,
 			);
 			path = SampleFramework;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					AD48268A21C1D0BC00BE31AD = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					AD48269321C1D0BC00BE31AD = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4826A621C1D0EB00BE31AD /* testclass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +225,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -271,8 +277,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -284,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -329,7 +337,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -341,6 +351,7 @@
 		AD4826A021C1D0BC00BE31AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rcg.SampleFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +377,7 @@
 		AD4826A121C1D0BC00BE31AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +402,7 @@
 		AD4826A321C1D0BC00BE31AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SampleFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +420,7 @@
 		AD4826A421C1D0BC00BE31AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SampleFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
