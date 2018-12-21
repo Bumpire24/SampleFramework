@@ -31,6 +31,7 @@
 		AD48269921C1D0BC00BE31AD /* SampleFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleFrameworkTests.swift; sourceTree = "<group>"; };
 		AD48269B21C1D0BC00BE31AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4826A521C1D0EB00BE31AD /* testclass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testclass.swift; sourceTree = "<group>"; };
+		ADA5C3BB21C29C3100EBAE3F /* SampleFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SampleFramework.framework; path = "../Documents/XCode Projects/Test_Carthage_Framework/Carthage/Build/iOS/SampleFramework.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 				AD48268D21C1D0BC00BE31AD /* SampleFramework */,
 				AD48269821C1D0BC00BE31AD /* SampleFrameworkTests */,
 				AD48268C21C1D0BC00BE31AD /* Products */,
+				ADA5C3BA21C29C3100EBAE3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +89,14 @@
 				AD48269B21C1D0BC00BE31AD /* Info.plist */,
 			);
 			path = SampleFrameworkTests;
+			sourceTree = "<group>";
+		};
+		ADA5C3BA21C29C3100EBAE3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADA5C3BB21C29C3100EBAE3F /* SampleFramework.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
